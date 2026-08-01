@@ -1,14 +1,16 @@
 // portal-os-v4/kernel/runtime.ts
 
 import { KernelMain } from './index';
-import { KernelEvents } from './events';
+import { dispatchEvent } from './eventBus';
 
 export function bootKernel() {
   KernelMain.state = 'running';
-  console.log(`[PK4] Boot event: ${KernelEvents.boot}`);
+  dispatchEvent('kernel.boot');
+  console.log('[PK4] Kernel booted.');
 }
 
 export function shutdownKernel() {
   KernelMain.state = 'paused';
-  console.log(`[PK4] Shutdown event: ${KernelEvents.shutdown}`);
+  dispatchEvent('kernel.shutdown');
+  console.log('[PK4] Kernel paused.');
 }
