@@ -12,6 +12,7 @@ export default function SuiteLauncher() {
         <li>XR Suite</li>
         <li>Identity Suite</li>
       </ul>
+      <p>Select a suite using the navigation bar above.</p>
     </div>
   );
 }
