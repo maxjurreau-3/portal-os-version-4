@@ -11,6 +11,7 @@ import PipelineViewer from './pipelineViewer';
 // Suite Dashboards
 import SportsDashboard from '../suites/sports/dashboard';
 import QuantumDashboard from '../suites/quantum/dashboard';
+import XRDashboard from '../suites/xr/dashboard';
 
 export default function ShellRouter() {
   const [view, setView] = useState('DESKTOP');
@@ -22,6 +23,7 @@ export default function ShellRouter() {
     PIPELINE_VIEWER: <PipelineViewer />,
     SPORTS_DASHBOARD: <SportsDashboard />,
     QUANTUM_DASHBOARD: <QuantumDashboard />,
+    XR_DASHBOARD: <XRDashboard />,
   };
 
   return (
@@ -33,6 +35,7 @@ export default function ShellRouter() {
         <button onClick={() => setView('PIPELINE_VIEWER')}>Pipeline</button>
         <button onClick={() => setView('SPORTS_DASHBOARD')}>Sports</button>
         <button onClick={() => setView('QUANTUM_DASHBOARD')}>Quantum</button>
+        <button onClick={() => setView('XR_DASHBOARD')}>XR</button>
       </nav>
 
       {views[view]}
