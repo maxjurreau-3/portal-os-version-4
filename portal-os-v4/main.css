@@ -1,0 +1,25 @@
+/* portal-os-v4/main.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: sans-serif;
+}
+
+.portal-os-container {
+  padding: 20px;
+}
+
+nav button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #444;
+}
