@@ -1,9 +1,16 @@
 // portal-os-v4/suites/identity/verification.ts
 
-export function verifyIdentity(document: unknown) {
-  console.log('[Identity] Verifying identity...');
+import { setIdentity, getIdentity } from './store';
+
+export function requestVerification(document: unknown) {
+  console.log('[Identity] Verification requested with document:', document);
+  // placeholder: auto-verify
+  const identity = getIdentity();
+  setIdentity({ verified: true, tier: 'VERIFIED' });
   return {
-    verified: true,
-    timestamp: Date.now(),
+    success: true,
+    previousTier: identity.tier,
+    newTier: 'VERIFIED',
   };
 }
+
