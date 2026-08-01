@@ -16,3 +16,8 @@ Portal‑OS v4 is designed for Cloudflare Pages.
 3. Create a new project.
 4. Select your Portal‑OS v4 repository.
 5. Set build command:
+6. Set output directory: npm run build
+7. 7. Deploy.
+
+Cloudflare Pages will automatically rebuild and redeploy on every commit.....dist
+
