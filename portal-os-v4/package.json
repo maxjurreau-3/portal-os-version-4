@@ -1,0 +1,7 @@
+{
+  "name": "portal-os-v4",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve"
+  }
+}
