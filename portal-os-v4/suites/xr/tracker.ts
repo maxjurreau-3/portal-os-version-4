@@ -1,7 +1,10 @@
 // portal-os-v4/suites/xr/tracker.ts
 
-export function trackXRPosition(position: { x: number; y: number; z: number }) {
-  console.log('[XR] Tracking XR position...');
+import { XRPosition } from './types';
+import { setXRPosition } from './store';
+
+export function trackXRPosition(position: XRPosition) {
+  setXRPosition(position);
   return {
     ...position,
     timestamp: Date.now(),
