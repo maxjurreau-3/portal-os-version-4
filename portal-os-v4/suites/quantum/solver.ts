@@ -1,7 +1,16 @@
 // portal-os-v4/suites/quantum/solver.ts
 
-export function runQuantumSolver(input: number[]) {
-  console.log('[Quantum] Running solver...');
-  // placeholder quantum-like transform
-  return input.map((x) => x * Math.random());
+import { getQuantumState, setQuantumState } from './store';
+
+export function runQuantumSolver() {
+  const state = getQuantumState();
+
+  const newAmplitudes = state.amplitudes.map((a) => {
+    const noise = (Math.random() - 0.5) * 0.1;
+    return Math.max(0, Math.min(1, a + noise));
+  });
+
+  setQuantumState({ amplitudes: newAmplitudes });
+
+  return newAmplitudes;
 }
