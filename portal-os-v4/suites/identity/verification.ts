@@ -13,4 +13,3 @@ export function requestVerification(document: unknown) {
     newTier: 'VERIFIED',
   };
 }
-
