@@ -6,6 +6,17 @@ import SuiteLauncher from './suiteLauncher';
 import IdentityPanel from './identityPanel';
 import PipelineViewer from './pipelineViewer';
 import SportsDashboard from '../suites/sports/dashboard';
+import QuantumDashboard from '../suites/quantum/dashboard';
+
+const views: Record<string, JSX.Element> = {
+  DESKTOP: <Desktop />,
+  SUITE_LAUNCHER: <SuiteLauncher />,
+  IDENTITY_PANEL: <IdentityPanel />,
+  PIPELINE_VIEWER: <PipelineViewer />,
+  SPORTS_DASHBOARD: <SportsDashboard />,
+  QUANTUM_DASHBOARD: <QuantumDashboard />,   // ← NEW
+};
+
 
 export default function ShellRouter() {
   const [view, setView] = useState('DESKTOP');
