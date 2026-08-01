@@ -15,3 +15,7 @@ Coverage includes:
 
 Tests use Jest and run with:
 
+
+All tests are TypeScript-based and run in Node environment....npm test
+
+
