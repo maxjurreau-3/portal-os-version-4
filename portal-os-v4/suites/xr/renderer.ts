@@ -1,9 +1,11 @@
 // portal-os-v4/suites/xr/renderer.ts
 
-export function renderXRScene(scene: unknown) {
-  console.log('[XR] Rendering XR scene...');
+import { XRScene } from './types';
+
+export function renderXRScene(scene: XRScene) {
+  console.log('[XR] Rendering XR scene:', scene.name);
   return {
     rendered: true,
-    scene,
+    objectCount: scene.objects.length,
   };
 }
