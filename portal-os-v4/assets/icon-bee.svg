@@ -1,0 +1,27 @@
+<!-- portal-os-v4/assets/icon-bee.svg -->
+<svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="beeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD34E"/>
+      <stop offset="100%" stop-color="#FF9F1C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wings -->
+  <ellipse cx="110" cy="120" rx="70" ry="50" fill="#FFF" opacity="0.85"/>
+  <ellipse cx="210" cy="120" rx="70" ry="50" fill="#FFF" opacity="0.85"/>
+
+  <!-- Body -->
+  <circle cx="160" cy="180" r="90" fill="url(#beeGrad)" />
+
+  <!-- Stripes -->
+  <rect x="90" y="150" width="140" height="25" fill="#000" opacity="0.75"/>
+  <rect x="90" y="190" width="140" height="25" fill="#000" opacity="0.75"/>
+
+  <!-- Head -->
+  <circle cx="160" cy="105" r="40" fill="#000" />
+
+  <!-- Antennae -->
+  <line x1="140" y1="60" x2="120" y2="20" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+  <line x1="180" y1="60" x2="200" y2="20" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+</svg>
