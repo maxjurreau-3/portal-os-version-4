@@ -1,0 +1,13 @@
+<!-- portal-os-v4/assets/icon-bee-hex.svg -->
+<svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="180,20 320,110 320,250 180,340 40,250 40,110"
+           fill="#FFB400" stroke="#000" stroke-width="12"/>
+
+  <circle cx="180" cy="180" r="90" fill="#000"/>
+  <circle cx="180" cy="180" r="70" fill="#FFD34E"/>
+
+  <rect x="130" y="150" width="100" height="25" fill="#000"/>
+  <rect x="130" y="190" width="100" height="25" fill="#000"/>
+
+  <circle cx="180" cy="115" r="35" fill="#000"/>
+</svg>
