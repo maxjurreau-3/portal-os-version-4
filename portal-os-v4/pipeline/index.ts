@@ -1,10 +1,19 @@
 // portal-os-v4/pipeline/index.ts
 
-export type PipelineStage = 'BUILD' | 'DEPLOY' | 'EXECUTE' | 'VERSION';
+import { runBuild } from './build';
+import { runDeploy } from './deploy';
+import { runExecute } from './execute';
+import { runVersion } from './version';
+import { getAllStages } from './store';
 
-export const PipelineStages: PipelineStage[] = [
-  'BUILD',
-  'DEPLOY',
-  'EXECUTE',
-  'VERSION',
-];
+export async function runFullPipeline(tag: string) {
+  console.log('[Pipeline] Full pipeline starting…');
+
+  await runBuild();
+  await runDeploy();
+  await runExecute();
+  await runVersion(tag);
+
+  console.log('[Pipeline] Full pipeline completed.');
+  console.table(getAllStages());
+}
