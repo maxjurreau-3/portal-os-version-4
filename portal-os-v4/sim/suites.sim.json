@@ -1,0 +1,18 @@
+{
+  "sports": {
+    "id": "suite.sports",
+    "tiers": ["FREE", "ACCUMULATION", "VERIFIED"]
+  },
+  "quantum": {
+    "id": "suite.quantum",
+    "tiers": ["FREE", "VERIFIED"]
+  },
+  "xr": {
+    "id": "suite.xr",
+    "tiers": ["FREE", "VERIFIED"]
+  },
+  "identity": {
+    "id": "suite.identity",
+    "tiers": ["VERIFIED"]
+  }
+}
