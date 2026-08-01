@@ -8,3 +8,6 @@ Portal‑OS v4 uses semantic versioning:
 
 Version tags are created by the pipeline:
 
+
+The Shell UI displays version logs and pipeline state.
+runVersion("v0.1.0")
