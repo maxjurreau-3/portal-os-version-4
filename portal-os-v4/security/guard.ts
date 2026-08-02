@@ -1,4 +1,10 @@
 // portal-os-v4/security/guard.ts
+import { authenticate } from './auth';
+
+export function guard() {
+  return authenticate();
+}
+
 
 import { getAuthState } from './auth';
 
