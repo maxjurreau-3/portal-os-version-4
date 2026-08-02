@@ -47,7 +47,10 @@ export default function ShellRouter() {
         <button onClick={() => setView('XR_DASHBOARD')}>XR</button>
       </nav>
 
-      {views[view]}
+      <div style={{ border: '2px solid red', padding: '20px' }}>
+  {views[view] || <div>VIEW NOT FOUND</div>}
+</div>
+
     </div>
   );
 }
