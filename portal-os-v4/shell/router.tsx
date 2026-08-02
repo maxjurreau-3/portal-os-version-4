@@ -50,7 +50,15 @@ export default function ShellRouter() {
       <div style={{ border: '2px solid red', padding: '20px' }}>
   {views[view] || <div>VIEW NOT FOUND</div>}
 </div>
+      <div style={{ border: '2px solid red', padding: '20px' }}>
+  {views[view] ?? (
+    <div style={{ color: 'red' }}>
+      Missing view: <strong>{view}</strong>
+    </div>
+  )}
+</div>
 
+  
     </div>
   );
 }
