@@ -1,0 +1,25 @@
+# .github/workflows/portal-os-pipeline.yml
+
+name: Portal-OS v4 Pipeline Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run full pipeline
+        run: npm test && npm run build
