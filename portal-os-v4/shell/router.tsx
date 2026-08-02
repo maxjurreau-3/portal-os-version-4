@@ -9,6 +9,7 @@ import IdentityPanel from './identityPanel';
 import PipelineViewer from './pipelineViewer';
 import UmbrellaPanel from './umbrellaPanel';
 import SimPanel from './simPanel';
+import SecurityPanel from './securityPanel';
 
 // Suite Dashboards
 import SportsDashboard from '../suites/sports/dashboard';
@@ -25,6 +26,7 @@ export default function ShellRouter() {
     PIPELINE_VIEWER: <PipelineViewer />,
     UMBRELLA_PANEL: <UmbrellaPanel />,
     SIM_PANEL: <SimPanel />,
+    SECURITY_PANEL: <SecurityPanel />,
     SPORTS_DASHBOARD: <SportsDashboard />,
     QUANTUM_DASHBOARD: <QuantumDashboard />,
     XR_DASHBOARD: <XRDashboard />,
@@ -39,6 +41,7 @@ export default function ShellRouter() {
         <button onClick={() => setView('PIPELINE_VIEWER')}>Pipeline</button>
         <button onClick={() => setView('UMBRELLA_PANEL')}>Umbrella</button>
         <button onClick={() => setView('SIM_PANEL')}>SIM</button>
+        <button onClick={() => setView('SECURITY_PANEL')}>Security</button>
         <button onClick={() => setView('SPORTS_DASHBOARD')}>Sports</button>
         <button onClick={() => setView('QUANTUM_DASHBOARD')}>Quantum</button>
         <button onClick={() => setView('XR_DASHBOARD')}>XR</button>
