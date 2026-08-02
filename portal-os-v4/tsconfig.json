@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "./index.tsx",
+    "./app.tsx",
+    "./kernel/**/*",
+    "./pipeline/**/*",
+    "./suites/**/*",
+    "./shell/**/*",
+    "./umbrella/**/*",
+    "./sim/**/*",
+    "./security/**/*"
+  ]
+}
